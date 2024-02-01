@@ -48,3 +48,7 @@ a {
     cursor: auto; /* Змінює курсор на стандартний */
     display: inline; /* Змінює тип відображення на inline */
 }
+
+*{
+	box-sizing: border-box;
+}

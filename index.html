@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Бюджетні курси Front-End 4min-IT</title>
 </head>
 <body>
-    
+
+<div class="header__bg">
     <div class="wrapper">
         <header class="header">
             <div class="header__left">
@@ -19,37 +23,48 @@
                 <a href="#price" class="header__right__item">Ціна</a>
                 <a href="#contact" class="header__right__item">Контакти</a>
                 <a href="#numbert" class="header__right__item">(093)-201-17-98</a>
-            </div>
+                <i class="fa-solid fa-xmark close"></i>
+            </div>  
+            <div class="burger">
+                <i class="fa-solid fa-bars" style="color: white;"></i>
+            </div>   
         </header>
     </div>
+</div>
 
-    <div class="wrapper">
-        <main class="main">
-            <div class="main__left">
-                <h1 class="h1__title">Курс Front-End розробник</h1> 
-                <p>Живі онлайн заняття з викладачем у будні по вечорам, і у вихідні вдень по дві години</p>  
-                <p>Навчання в групі до 14 людей. HTML, CSS, JavaScript, React, Node.js, PostgreSql</p>   
-                      
-            </div>
-            <div class="main__right">
-                <div class="main__right__block">
-                    <h4>Графік</h4>
-                    <p>Вівторок 19:00, Субота 12:00</p>
+    <div class="main__bg">
+        <div class="wrapper">
+            <main class="main">
+                <div class="main__left">
+                    <h1 class="h1__title">Курс Front-End розробник</h1> 
+                    <p class="main__left__text">Навчання в групі до 14 людей. HTML, CSS, JavaScript, React, Node.js, PostgreSql</p>   
+                    <p class="main__left__text">Живі онлайн заняття з викладачем два рази на тиждень по дві години</p>    
+                    <div class="main__btn"><p>Записатись</p></div>                 
                 </div>
-                <div class="main__right__block">
-                    <h4>Тривалість курсу</h4>
-                    <p>6 місяців</p>
+                
+                <div class="main__right">
+                    <div class="main__right__block">
+                        <h4 class="main__right__block__title">Графік:</h4>
+                        <p class="main__right__block__text">Вівторок 19:00, Субота 12:00</p>
+                    </div>
+                    <div class="main__right__block">
+                        <h4 class="main__right__block__title">Тривалість курсу:</h4>
+                        <p class="main__right__block__text">6 місяців</p>
+                    </div>
+                    <div class="main__right__block">
+                        <h4 class="main__right__block__title">Ціна за місяць:</h4>
+                        <p class="main__right__block__text">900грн</p>
+                    </div>   
+                    <div class="main__right__block">
+                        <h4 class="main__right__block__title">Старт:</h4>
+                        <p class="main__right__block__text">20-27 лютого</p>
+                    </div>  
                 </div>
-                <div class="main__right__block">
-                    <h4>Ціна за місяць</h4>
-                    <p>900грн</p>
-                </div>   
-                <div class="main__right__block">
-                    <h4>Старт</h4>
-                    <p>20-27 лютого</p>
-                </div>  
-            </div>
-        </main>
+            </main>
+        </div>
     </div>
+    
+
+    <script src="js/script.js"></script>
 </body>
 </html>
