@@ -239,20 +239,19 @@
 
     .arrow{
         font-size: 20px;
+        height: 30px;
+        width: 30px;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &:hover{
-        padding: 8px 0px;
 
         .program__up__more{
-            height: 30px;
-            width: 30px;
             border-radius: 50%;
             background-color: #5eb077;
             color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
     }
 }
