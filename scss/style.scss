@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
-
 .wrapper{
     max-width: 1170px;
     margin: 0 auto;
@@ -64,16 +62,19 @@
 }
 
 .close {
-    display: none;
     color: black;
     position: absolute;
     top: 7%;
     right: 7%;
     font-size: 30px;
     cursor: pointer;
+}
+
+.block__close{
+    display: none;
 
     @media (max-width: 670px) {
-        display: none;
+        display: inline-block;
     }
 }
 
@@ -168,4 +169,90 @@
     }
 
 
+}
+
+.title-h3{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+.prog{
+    padding: 70px 0px;
+    .program__up{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid rgb(187, 183, 183);
+
+        .program__up__text{
+            font-size: 18px;
+            font-weight: 200;
+            line-height: 1.5;
+        }
+    }
+
+    .program__content{
+        padding: 30px 0px;
+        border-bottom: 2px solid rgb(187, 183, 183);
+        position: relative;
+
+        .program__content__titile{
+            font-size: 20px;
+            font-weight: 200;
+            cursor: pointer;
+        }
+
+        .program__content__block{
+            display: none;
+            flex-direction: column;
+            gap: 20px;
+
+            .program__content__text{
+                font-size: 18px;
+                font-weight: 200;
+                margin: 0px 20px;
+                
+            }
+
+            .program__content__text:first-child{
+                margin-top: 30px;
+            }
+
+            .program__content__text:nth-last-child(0){
+                margin-top: 30px;
+            }
+
+        }
+    
+    }
+
+}
+
+
+.cont__title__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    .arrow{
+        font-size: 20px;
+    }
+
+    &:hover{
+        padding: 8px 0px;
+
+        .program__up__more{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: #5eb077;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
