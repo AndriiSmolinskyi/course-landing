@@ -50,6 +50,11 @@
     }
 }
 
+.header__right__item:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 .burger {
     display: none;
     font-size: 30px;
@@ -254,14 +259,18 @@
         align-items: center;
     }
 
-    &:hover{
+    @media (min-width: 1024px) {
+        &:hover{
 
-        .program__up__more{
-            border-radius: 50%;
-            background-color: #5eb077;
-            color: white;
+            .program__up__more{
+                border-radius: 50%;
+                background-color: #5eb077;
+                color: white;
+            }
         }
     }
+
+    
 }
 
 html {
@@ -446,7 +455,6 @@ html {
 }
 
 .footer__link:hover{
-
     cursor: pointer;
     opacity: 0.8;
 }
