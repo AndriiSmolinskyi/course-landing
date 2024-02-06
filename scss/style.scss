@@ -368,6 +368,76 @@ html {
 
     }
 
+    .enrollment__down__flex{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        padding: 30px;
+        
+        .enrollment__down__flex__block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+
+            .down__flex__title{
+                font-size: 20px;
+            }
+
+            .down__flex__text{
+                font-size: 18px;
+                text-align: center;
+            }
+
+        }
+
+        .enrollment__down__flex__block::before{
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 30px;
+            background-color: #5eb077;
+            top: 105%
+        }
+
+        .enrollment__down__flex__block:last-child::before {
+            display: none;
+        }
+
+        
+    }
+
 }
 
+
+.contac__bg{
+    // background-color: #048bbe;
+    background-color: black;
+}
+
+.contac{
+    color: white;
+    padding: 50px 0px;
+
+    .contac__text{
+        font-size: 20px;
+    }
+
+    .contac__flex{
+        display: flex;
+        padding-top: 30px;
+        gap: 25px;
+        flex-direction: column;
+
+        .contac__flex__right{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+    }
+
+
+}
 
