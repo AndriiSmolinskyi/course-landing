@@ -133,33 +133,7 @@
             line-height: 1.5;
         }
 
-        .main__btn{
-            box-sizing: border-box;
-            margin-top: 10px;
-            font-family: Roboto;
-            background-color: #5eb077;
-            width: 200px;
-            height: 50px;
-            font-size: 18px;
-            border-radius: 20px;
-            font-weight: 400;
-            cursor: pointer;
-            color: white; 
-            border: 3px solid #5eb077;  
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            @media (max-width: 340px) {
-                width: 170px;
-            }
-
-            &:hover{
-                border: 3px solid #5eb077;
-                background-color: white;
-                color: #5eb077;
-            }
-        }
+        
 
         
     }
@@ -182,6 +156,47 @@
     }
 
 
+}
+
+.main__btn{
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-family: Roboto;
+    background-color: #5eb077;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    color: white; 
+    border: 3px solid #5eb077;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 340px) {
+        width: 170px;
+    }
+
+    &:hover{
+        border: 3px solid #5eb077;
+        background-color: white;
+        color: #5eb077;
+    }
+}
+
+.btn__comp{
+    @media (max-width: 1100px) {
+        display: none;
+    }
+}
+
+.btn__mob{
+    display: none;
+    @media (max-width: 1100px) {
+        display: block;
+    }
 }
 
 .title-h3{
